@@ -24,21 +24,26 @@ int main(int argc, char *argv[]){
 
 	// Switch case to do numerical operation based on whta operation user entered
 	switch(op){
-		case "+":
+		case '+':
 			result = num1 + num2;
-		case "-": 
+			break;
+		case '-': 
 			result = num1 - num2;
-		case "*":
+			break;
+		case '*':
 			result = num1 * num2;
-		case "/":
-			if num2 = 0{
+			break;
+		case '/':
+			if(num2 = 0){
 				printf("Error: Attempting to divide by 0!\n");
-				return 1;
+			return 1;
 			result = num1 / num2;
+			break;
 		// If operator not recognized print error
 		default:
 			printf("Error: Unknown operator, %c.\n", op);
 			return 1;
+	}
 	printf("Result: %d\n", result);
 	return 0;
 }
